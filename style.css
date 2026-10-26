@@ -10,21 +10,21 @@ body {
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 20%);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 25%);
     gap: 10px;
-    padding: 5px;
-}
-
-.container p {
-    font-weight: 10px;
+    padding: 50px;
 }
 
 .a {
-    grid-column: span 5;
+    grid-column: span 12;
     grid-row: 1;
     text-align: center;
     color: red;
+}
+
+img:hover {
+    cursor: pointer;
 }
 
 .fr-b4-b {
@@ -34,19 +34,19 @@ body {
     grid-row: 2;
 }
 .b {
-    grid-column: 2;
+    grid-column: span 5;
     grid-row: 2;
     background-color: red;
     color: white;
 }
 .c {
-    grid-column: 3;
+    grid-column: span 5;
     grid-row: 2;
     background-color: white;
     color: red;
     display: grid;
-    grid-template-columns: repeat(3, 70px);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 5px;
     font-size: 10px;
 }
@@ -57,19 +57,19 @@ body {
     grid-row: 2;
 }
 .c #img2 {
-     width: 70px;
+    width: 70px;
     height: 70px;
     grid-column: 2;
     grid-row: 1;
 }
 .c #img3 {
-     width: 70px;
+    width: 70px;
     height: 70px;
     grid-column: 3;
     grid-row: 2;
 }
 .c h3 {
-     grid-column: 3;
+    grid-column: 3;
     grid-row: 1;
     font-size: large;
 }
@@ -77,75 +77,53 @@ body {
 .fr-after-c {
     background-color: red;
     color: white;
-    grid-column: 4;
+    grid-column: 12;
     grid-row: 2;
 }
 
 .fr-b4-d {
     background-color: red;
     color: white;
-    grid-column: 1;
+    grid-column: span 2;
     grid-row: 3;
-    transform: translateX(50px);
 }
 .d {
-    grid-column: 2;
+    grid-column: span 5;
     grid-row: 3;
     background-color: white;
     color: red;
-    transform: translateX(50px);
 }
 .e {
-    grid-column: 3;
+    grid-column: span 5;
     grid-row: 3;
     background-color: red;
     color: white;
-    transform: translateX(50px);
-}
-
-.fr-after-e {
-    grid-column: 4;
-    grid-row: 3;
-    background-color: white;
-    color: red;
-    transform: translateX(50px);
 }
 
 .fr-b4-f {
-    grid-column: 1;
+    grid-column: span 3;
     grid-row: 4;
     background-color: white;
     color: red;
-    transform: translateX(120px);
 }
 
 .f {
-    grid-column: 2;
+    grid-column: span 5;
     grid-row: 4;
     background-color: white;
-    color: red;;
-    transform: translateX(120px);
+    color: red;
 }
 .f #img4 {
      width: 70px;
     height: 70px;
 }
 .g {
-    grid-column: 3;
+    grid-column: span 4;
     grid-row: 4;
     background-color: white;
     color: red;
-    transform: translateX(120px);
 }
 .g #img5 {
      width: 70px;
     height: 70px;
-}
-.fr-after-g {
-    grid-column: 4;
-    grid-row: 4;
-    background-color: white;
-    color: red;
-    transform: translateX(120px);
-
 }
