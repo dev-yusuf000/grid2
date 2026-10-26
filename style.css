@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dbd8d8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20%);
+    gap: 10px;
+    padding: 5px;
+}
+
+.container p {
+    font-weight: 10px;
+}
+
+.a {
+    grid-column: span 5;
+    grid-row: 1;
+    text-align: center;
+    color: red;
+}
+
+.fr-b4-b {
+    background-color: red;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+}
+.b {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: red;
+    color: white;
+}
+.c {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: white;
+    color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+    font-size: 10px;
+}
+.c #img1 {
+    width: 70px;
+    height: 70px;
+    grid-column: 1;
+    grid-row: 2;
+}
+.c #img2 {
+     width: 70px;
+    height: 70px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.c #img3 {
+     width: 70px;
+    height: 70px;
+    grid-column: 3;
+    grid-row: 2;
+}
+.c h3 {
+     grid-column: 3;
+    grid-row: 1;
+    font-size: large;
+}
+
+.fr-after-c {
+    background-color: red;
+    color: white;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.fr-b4-d {
+    background-color: red;
+    color: white;
+    grid-column: 1;
+    grid-row: 3;
+    transform: translateX(50px);
+}
+.d {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: white;
+    color: red;
+    transform: translateX(50px);
+}
+.e {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: red;
+    color: white;
+    transform: translateX(50px);
+}
+
+.fr-after-e {
+    grid-column: 4;
+    grid-row: 3;
+    background-color: white;
+    color: red;
+    transform: translateX(50px);
+}
+
+.fr-b4-f {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: white;
+    color: red;
+    transform: translateX(120px);
+}
+
+.f {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: white;
+    color: red;;
+    transform: translateX(120px);
+}
+.f #img4 {
+     width: 70px;
+    height: 70px;
+}
+.g {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: white;
+    color: red;
+    transform: translateX(120px);
+}
+.g #img5 {
+     width: 70px;
+    height: 70px;
+}
+.fr-after-g {
+    grid-column: 4;
+    grid-row: 4;
+    background-color: white;
+    color: red;
+    transform: translateX(120px);
+
+}
